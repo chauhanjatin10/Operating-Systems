@@ -1,0 +1,27 @@
+Readme ->
+
+Instructions - 
+
+1) Compile the code using -> g++ Assgn1-EDF_CS17BTECH11019.cpp -o edf
+					and   -> g++ Assgn1-RMS_CS17BTECH11019.cpp -o rms
+
+2) Run the correspoding input file using -> ./edf < input.txt for EDF
+											./rms < input.txt for RMS
+
+
+if number of processes is greater than 1, then two files will be created ->
+
+	1) RM-Log.txt -> this contains the details of all events. Events are considered->
+		a) when a process starts execution
+		b) it is preempted by another process
+		c) it has encountered its deadline
+		d) when it has finished its execution
+		e) When it misses its deadline
+
+	2) RM-Stats.txt -> this contains the following stats ->
+		(a) number of processes that came into the system 
+		(b) number of processes that successfully completed 
+		(c) number of processes that missed their deadlines 
+		(d) Average waiting time for each process
+
+	Similar files will be created for EDF algorithm.
